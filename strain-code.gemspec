@@ -2,7 +2,7 @@ $:.unshift File.join(File.dirname(__FILE__), 'lib')
 
 require 'strain_code/version'
 Gem::Specification.new do |s|
-  s.name        = 'strain_code'
+  s.name        = 'strain-code'
   s.version     = StrainCode::VERSION
   s.summary     = 'Parsing and formatting of strain numbers'
   s.description = 'Strain numbers are microbiological culture collection identifiers'
