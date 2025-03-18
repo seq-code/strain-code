@@ -1,0 +1,251 @@
+# List of catalogues following the scheme (all optional except `codes`):
+# - codes: (mandatory) Array of catalogue codes
+# - country_code: ISO 3166-1 two-letter country code
+# - name: Name of the culture collection, ideally using the spelling that
+#   matches a catalogue code
+# - name_en: Name of the culture collection in English, if +name+ is spelled in
+#   a different language
+# - organization: Name of the organization generating the catalogue. If a
+#   well-known acronym exists, this field should start with this acronym
+#   followed by colon (:) and the spelled-out name of the organization
+# - url: URL of the catalogue's main website
+# - url_pattern: URL pattern indicating how to form links to catalogue entries,
+#   with "%s" indicating the non-code part of the culture number
+# 
+# Additionally, fields starting with `_` are ignored in the basecode, and
+# notably include `_examples` (an array of strain numbers) and `_tested`
+# (the date in which the website was last tested)
+catalogues:
+  - codes: [ ABB ]
+    country_code: KR
+    name: Asian Bacterial Bank
+    organization: Samsung Biomedical Research Institute
+  - codes: [ ACAM ]
+    country_code: AU
+    name: Australian Collection of Antarctic Microorganisms
+    organization: University of Tasmania
+  - codes: [ ACCC ]
+    country_code: CN
+    name: Agricultural Culture Collection of China
+    organization: Chinese Academy of Agricultural Sciences
+  - codes: [ ACM, UQM ]
+    country_code: AU
+    name: Australian Collection of Microorganisms
+    organization: The University of Queensland
+  - codes: [ AHN ]
+    country_code: FI
+    name: Anaerobe Reference Laboratory, Helsinki Collection
+  - codes: [ AHU ]
+    country_code: JP
+    name: |
+      Laboratory of Culture Collection of Microorganisms,
+      Faculty of Agriculture, Hokkaido University
+    organization: Hokkaido University
+  - codes: [ AJ ]
+    country_code: JP
+    name: Central Research Laboratories, Ajinomoto Co. Inc.
+    organization: Ajinomoto Co. Inc.
+  - codes: [ AKU ]
+    country_code: JP
+    name: Faculty of Agriculture, Kyoto University
+    organization: Kyoto University
+  - codes: [ AMP ]
+    country_code: AU
+    name: Australian Mycological Panel
+  - codes: [ ANMR ]
+    name: Asian Network on Microbial Researches
+  - codes: [ ATCC ]
+    country_code: US
+    name: American Type Culture Collection
+    url: 'https://www.atcc.org'
+    url_pattern: 'https://www.atcc.org/products/%s'
+  - codes: [ DSM ]
+    country_code: DE
+    name: Deutsche Sammlung von Mikroorganismen und Zellkulturen
+    name_en: German Collection of Microorganisms and Cell Cultures
+    organization: |
+      Leibniz Institute DSMZ - German Collection of Microorganisms and
+      Cell Cultures GmbH
+    url: 'https://www.dsmz.de/collection/catalogue'
+    url_pattern:
+      'https://www.dsmz.de/collection/catalogue/details/culture/DSM-%s'
+  - codes: [ IFO, NBRC ]
+    country_code: JP
+    name: 'NITE Biological Resource Center'
+    organization: 'NITE: National Institute of Technology and Evaluation'
+    url: 'https://www.nite.go.jp/nbrc/catalogue/'
+    url_pattern:
+      'https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=IFO&CAT=%s'
+  - codes: [ JCM ]
+    country_code: JP
+    name: 'Japan Collection of Microorganisms'
+    organization: RIKEN
+    url: 'https://jcm.brc.riken.jp/en/'
+    url_pattern: 'https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=%s'
+  - codes: [ KCTC ]
+    country_code: KR
+    name: Korean Collection for Type Cultures
+    organization:
+      'KRIBB: Korea Research Institute of Bioscience and Biotechnology'
+    url: 'https://kctc.kribb.re.kr/en/collection/'
+    url_pattern: 'https://kctc.kribb.re.kr/collection/view?sn=%s'
+    _examples: [ KCTC 92132 ]
+    _tested: 2025-03-18
+  - codes: [ NCTC ]
+    country_code: UK
+    name: National Collection of Type Cultures
+    organization: Health Security Agency
+    url: 'https://www.culturecollections.org.uk/products/bacteria-and-mycoplasmas/'
+    url_pattern:
+      'https://www.culturecollections.org.uk/products/bacteria/detail.jsp?collection=nctc&refId=NCTC+%s'
+  - codes: [ BCRC ]
+    country_code: TW
+    name: Bioresource Collection and Research Center
+    organization: Food Industry Research and Development Insitute
+    url: 'https://catalog.bcrc.firdi.org.tw/'
+    url_pattern: 'https://catalog.bcrc.firdi.org.tw/BcrcContent?bid=%s'
+  - codes: [ CAIM ]
+    country_code: MX
+    name: Collection of Aquatic Important Microorganisms
+    organization: 'CIAD: Centro de Investigación en Alimentación y Desarrollo'
+    url: 'https://www.ciad.mx/caim'
+    url_pattern:
+      'https://www.ciad.mx/caim/busqueda.php?searchtype=caim&criterio=%s'
+  - codes: [ CCALA ]
+    name: Culture Collection of Autotrophic Organisms
+    organization: Czech Academy of Sciences
+    country_code: CZ
+    url_pattern: 'https://ccala.butbn.cas.cz/strain/%s'
+  - codes: [ CCM ]
+    name: Czech Collection of Microorganisms
+    organization: Masaryk University
+    country_code: CZ
+    url_pattern: 'https://www.sci.muni.cz/ccm/bakterie/camb/%s'
+  - codes: [ CGMCC, AS ]
+    name: China General Microbiological Culture Collection Center
+    organization: National Science and Technology Infrastructure
+    country_code: CN
+    url_pattern: 'https://cgmcc.net/english/search?stn=%s'
+    # From NCBI Taxonomy (not working):
+    # 'http://www.cgmcc.net/english/cata.php?stn=CGMCC%%20%s'
+    _examples: [ CGMCC 1.19149 ]
+    _tested: 2025-03-18
+  - codes: [ CCMP ]
+    name: |
+      NCMA: National Center for Marine Algae and Microbiota,
+      formerly Culture Collection for Marine Phytoplankton
+    organization: Bigelow Laboratory for Ocean Sciences
+    country_code: US
+    url_pattern: 'https://ncma.bigelow.org/CCMP%s'
+  - codes: [ CCUG ]
+    name: Culture Collection University of Gothenburg
+    organization: University of Gothenburg
+    country_code: SE
+    url_pattern: 'https://www.ccug.se/strain?id=%s'
+  - codes: [ CICC ]
+    name: China Center of Industrial Culture Collection
+    organization:
+      China National Research Institute of Food & Fermentation Industries
+    country_code: CN
+    url_pattern: 'http://www.china-cicc.org/search/?classtype=1&keyword=%s'
+  - codes: [ CIP ]
+    name: Collection de l'Institut Pasteur
+    name_en: Collection of the Institut Pasteur
+    organization: Institut Pasteur
+    country_code: FR
+    url_pattern:
+      'https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP%%20%s'
+  - codes: [ GDMCC ]
+    country_code: CN
+    name: Guangdong Microbial Culture Collection Center
+    organization: Guangdong Academy of Sciences
+    url:
+      'http://english.gdim.cn/research/researchdivisions/guangdongmicrobialculturecollectioncentergdmcc/'
+  - codes: [ ITM ]
+    name: |
+      Belgian Coordinated Collections of Microorganisms (BCCM),
+      Institute of Tropical Medicine Antwerp Mycobacteria Collection
+    organization: 'BELSPO: Belgian Science Policy'
+    country_code: BE
+    url_pattern:
+      'https://bccm.belspo.be/catalogues/bm-details?accession_number=ITM%%20%s'
+  - codes: [ JMRC ]
+    name: Jena Microbial Resource Collection
+    organization: Friedrich Schiller University Jena
+    country_name: DE
+    url_pattern: 'http://www.jmrc.uni-jena.de/data.php?fsu=%s'
+  - codes: [ KACC ]
+    name: Korean Agricultural Culture Collection
+    organization: National Academy of Agricultural Science
+    country_code: KR
+    url_pattern: 
+      'https://genebank.rda.go.kr/eng/mic/cat/MicrobeSearch.do?sSearchWith=no&sTxt1=%s'
+  - codes: [ LMG ]
+    name: |
+      Belgian Coordinated Collections of Microorganisms (BCCM),
+      Bacteria Collection Laboratorium voor Microbiologie Universiteit Gent
+    name_en: |
+      Belgian Coordinated Collections of Microorganisms (BCCM),
+      Bacteria Collection Laboratory of Microbiology, University of Ghent
+    organization: 'BELSPO: Belgian Science Policy'
+    country_code: BE
+    url_pattern: 'https://bccm.belspo.be/catalogues/lmg-strain-details?NUM=%s'
+  - codes: [ MCCC ]
+    name: Marine Culture Collection of China
+    organization: Third Institute of Oceanography
+    country_code: CN
+    url_pattern: 'https://mccc.org.cn/detailRecord3.asp?bcbh=%s'
+  - codes: [ NEPCC ]
+    name: North East Pacific Culture Collection
+    organization: The University of British Columbia
+    country_code: CA
+    url_pattern: 'https://db.botany.ubc.ca/cccm/mfa/%s'
+  - codes: [ NIES ]
+    name: National Institute for Environmental Studies Collection
+    organization: National Institute for Environmental Studies
+    country_code: JP
+    url_pattern: 'https://mcc.nies.go.jp/numberSearch.do?strainNumber=%s'
+  - codes: [ NRRL ]
+    name: |
+      Agricultural Research Service Culture Collection,
+      formerly Northern Regional Research Laboratory
+    organization: National Center for Agricultural Utilization Research
+    country_code: US
+    url_pattern:
+      'https://nrrl.ncaur.usda.gov/cgi-bin/usda/prokaryote/report.html?nrrlcodes=%s'
+  - codes: [ PCC ]
+    name: Pasteur Cultures of Cyanobacteria
+    organization: Institut Pasteur
+    country_code: FR
+    url_pattern:
+      'https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=PCC%%20%s'
+  - codes: [ SAG ]
+    name: Sammlung von Algenkulturen
+    name_en: Culture Collection of Algae
+    organization: University of Göttingen
+    country_code: DE
+    url_pattern:
+      'https://sagdb.uni-goettingen.de/detailedList.php?str_number=%s'
+  - codes: [ TBRC ]
+    name: Thailand Bioresource Research Center
+    organization: Thailand Bioresource Research Center
+    country_code: TH
+    url_pattern: 'https://tbrcnetwork.org/microb_detail.php?code=TBRC_%s'
+  - codes: [ ULC ]
+    name: |
+      Belgian Coordinated Collections of Microorganisms (BCCM),
+      University of Liège Cyanobacteria Collection
+    organization: 'BELSPO: Belgian Science Policy'
+    country_code: BE
+    url_pattern:
+      'https://bccm.belspo.be/catalogues/bm-details?accession_number=ULC%%20%s'
+  - codes: [ VKM ]
+    name: ВСЕРОССИЙСКАЯ КОЛЛЕКЦИЯ МИКРООРГАНИЗМОВ
+    name_en: All-Russian Collection of Microorganisms
+    organization: |
+      Pushchino Scientific Center for Biological Research of the
+      Russian Academy of Sciences
+    country_code: RU
+    url_pattern: 'http://www.vkm.ru/strains.php?vkm=%s'
+manifest:
+  update: 2025-03-18

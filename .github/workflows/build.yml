@@ -1,0 +1,28 @@
+name: build
+on: [push, pull_request]
+jobs:
+  publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    name: Release new version
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+      - name: Check release candidates
+        id: release
+        run: |
+          gem_version="$(ruby -r rubygems -e \
+                "puts Gem::Specification::load('$(ls *.gemspec)').version")"
+          unset STABLE
+          [[ "$gem_version" == *.rc* ]] || STABLE='true'
+          echo "STABLE=${STABLE}" >> $GITHUB_OUTPUT
+      - name: Tag and deploy
+        id: publish
+        uses: discourse/publish-rubygems-action@v2
+        if: steps.release.outputs.STABLE
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
+          GIT_EMAIL: bot@seqco.de
+          GIT_NAME: Automated Release
+
