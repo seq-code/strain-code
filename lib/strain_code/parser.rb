@@ -21,12 +21,12 @@ class StrainCode
     end
 
     def number(number)
-      StrainCode::StrainNumber.new(StrainCode::Parser.clean(number))
+      StrainCode::StrainNumber.strain_number(number)
     end
 
     def catalogue(code)
-      c = StrainCode::Catalogue.new(code)
-      c.codes ? c : nil
+      c = StrainCode::Catalogue.catalogue(code)
+      c if c&.codes
     end
   end
 end
