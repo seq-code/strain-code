@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description = 'Strain numbers are microbiological culture collection identifiers'
 
   s.files = Dir[
-    'lib/**/*.rb', 'data/*' 'test/**/*.rb', 'bin/*',
+    'lib/**/*.rb', 'data/*', 'test/**/*.rb', 'bin/*',
     'Gemfile', 'Rakefile', 'README.md', 'LICENSE'
   ]
 

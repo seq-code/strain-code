@@ -15,6 +15,10 @@
 # Additionally, fields starting with `_` are ignored in the basecode, and
 # notably include `_examples` (an array of strain numbers) and `_tested`
 # (the date in which the website was last tested)
+#
+# See also:
+# - https://ftp.ncbi.nih.gov/pub/taxonomy/Ccode_dump.txt
+# - https://jcm.brc.riken.jp/en/abbr_e
 catalogues:
   - codes: [ ABB ]
     country_code: KR
