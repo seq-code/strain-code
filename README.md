@@ -12,7 +12,7 @@ gem install strain-code
 ## Usage
 
 ```ruby
-require 'strain_code'
+require 'strain-code'
 
 # Parse one or more numbers in a variety of formats
 str_no = StrainCode.parse <<STR_NO

@@ -3,7 +3,7 @@ require 'rake/testtask'
 
 $:.unshift File.join(File.dirname(__FILE__), 'lib')
 
-require 'strain_code/version'
+require 'strain-code/version'
 
 SOURCES = FileList['lib/**/*.rb']
 
