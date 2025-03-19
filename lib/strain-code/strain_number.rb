@@ -1,4 +1,4 @@
-class StrainCode::StrainNumber
+class StrainCode::Number
   attr_accessor :ori_number, :code, :accession
 
   class << self

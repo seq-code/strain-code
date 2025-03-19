@@ -1,7 +1,7 @@
 require 'yaml'
 require 'ostruct'
-require 'strain_code/version'
-require 'strain_code/catalogue'
+require 'strain-code/version'
+require 'strain-code/catalogue'
 
 class StrainCode
   class << self

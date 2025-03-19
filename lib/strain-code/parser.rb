@@ -1,4 +1,4 @@
-require 'strain_code/strain_number'
+require 'strain-code/number'
 
 class StrainCode::Parser
   class << self
@@ -8,7 +8,7 @@ class StrainCode::Parser
 
     def parse(numbers)
       clean(numbers).split(' = ').map do |number|
-        StrainCode::StrainNumber.new(number)
+        StrainCode::Number.new(number)
       end
     end
   end
@@ -21,7 +21,7 @@ class StrainCode
     end
 
     def number(number)
-      StrainCode::StrainNumber.strain_number(number)
+      StrainCode::Number.strain_number(number)
     end
 
     def catalogue(code)
