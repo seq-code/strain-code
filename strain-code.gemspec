@@ -1,6 +1,7 @@
 $:.unshift File.join(File.dirname(__FILE__), 'lib')
 
-require 'strain_code/version'
+require 'strain-code/version'
+
 Gem::Specification.new do |s|
   s.name        = 'strain-code'
   s.version     = StrainCode::VERSION
