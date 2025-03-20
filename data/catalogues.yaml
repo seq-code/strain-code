@@ -173,6 +173,18 @@ catalogues:
     organization: Gifu University School of Medicine
 
   #--- H
+  - codes: [ HAMBI ]
+    country_code: FI
+    name: >-
+      Culture Collection of the Department of Microbiology,
+      Faculty of Agriculture and Forestry, University of Helsinki
+    organization: University of Helsinki
+    url: "https://www.helsinki.fi/en/infrastructures/biodiversity-collections/\
+      infrastructures/microbial-domain-biological-resource-centre-hambi"
+    url_pattern: 'https://kotka.luomus.fi/culture/bac?q="HAMBI%20%s"'
+    _example: [ HAMBI 1518 ]
+    _tested: 2025-03-20
+    _notes: url_pattern points to a search result form
 
   #--- I
   - codes: [ IAM ]
