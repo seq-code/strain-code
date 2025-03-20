@@ -63,6 +63,14 @@ catalogues:
     name: American Type Culture Collection
     url: 'https://www.atcc.org'
     url_pattern: 'https://www.atcc.org/products/%s'
+  - codes: [ CECT ]
+    country_code: ES
+    name: Colección Española de Cultivos Tipo
+    name_en: Spanish Collection of Type Cultures
+    organization: University of Valencia
+    url:
+      'https://www.uv.es/uvweb/coleccion-espanola-cultivos-tipo/es/coleccion-espanola-cultivos-tipo-1285872233521.html'
+    url_pattern: 'https://www.cect.org/vstrn2.php?cect=%s'
   - codes: [ DSM ]
     country_code: DE
     name: Deutsche Sammlung von Mikroorganismen und Zellkulturen
@@ -209,6 +217,10 @@ catalogues:
     organization: National Institute for Environmental Studies
     country_code: JP
     url_pattern: 'https://mcc.nies.go.jp/numberSearch.do?strainNumber=%s'
+  - codes: [ NRC, NRCC ]
+    country_code: CA
+    name: Division of Biological Sciences, National Research Council of Canada
+    organization: National Research Council
   - codes: [ NRRL ]
     name: |
       Agricultural Research Service Culture Collection,
