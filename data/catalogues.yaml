@@ -102,6 +102,13 @@ catalogues:
     url: "https://www.ciad.mx/caim"
     url_pattern:
       "https://www.ciad.mx/caim/busqueda.php?searchtype=caim&criterio=%s"
+  - codes: [ CBAS ]
+    country_code: BR
+    name: Coleção de Bactérias do Ambiente e Saúde
+    name_en: Bacteria Collection of Environment and Health
+    organization: Oswaldo Cruz Institute, FIOCRUZ
+    url: "https://cbas.fiocruz.br/index?catalogue"
+    _examples: [ CBAS 716 ]
   - codes: [ CCALA ]
     name: Culture Collection of Autotrophic Organisms
     organization: Czech Academy of Sciences
@@ -112,13 +119,14 @@ catalogues:
     organization: Masaryk University
     country_code: CZ
     url_pattern: "https://www.sci.muni.cz/ccm/bakterie/camb/%s"
-  - codes: [ CCMP ]
+  - codes: [ CCMP, NCMA ]
     name: >-
       NCMA: National Center for Marine Algae and Microbiota,
       formerly Culture Collection for Marine Phytoplankton
     organization: Bigelow Laboratory for Ocean Sciences
     country_code: US
     url_pattern: "https://ncma.bigelow.org/CCMP%s"
+    _notes: url_pattern does not work consistently with NCMA numbers
   - codes: [ CCTCC ]
     country_code: CN
     name: China Center for Type Culture Collection
@@ -137,6 +145,11 @@ catalogues:
       "https://www.uv.es/uvweb/coleccion-espanola-cultivos-tipo/es/\
       coleccion-espanola-cultivos-tipo-1285872233521.html"
     url_pattern: 'https://www.cect.org/vstrn2.php?cect=%s'
+  - codes: [ CFCC ]
+    country_code: CN
+    name: China Forestry Culture Collection Center
+    organization:
+      Research Institute of Forest Ecology, Environment and Protection
   - codes: [ CGMCC, AS ]
     name: China General Microbiological Culture Collection Center
     organization: National Science and Technology Infrastructure
@@ -295,6 +308,12 @@ catalogues:
       databases-micro_search_detail_en.php?maff=%s"
     _examples: [ MAFF 210265 ]
     _tested: 2020-03-20
+  - codes: [ MCC ]
+    country_code: IN
+    name: Microbial Culture Collection
+    organization: National Centre for Cell Science, Maharashtra
+    url: "http://ncmr.nccs.res.in/catalogue"
+    _examples: [ MCC 3400 ]
   - codes: [ MCCC ]
     name: Marine Culture Collection of China
     organization: Third Institute of Oceanography
