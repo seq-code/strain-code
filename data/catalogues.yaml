@@ -296,7 +296,7 @@ catalogues:
     organization: "BELSPO: Belgian Science Policy"
     country_code: BE
     url: "https://bccm.belspo.be/catalogues"
-    url_pattern: "https://bccm.belspo.be/catalogues/lmg-strain-details?NUM=%s"
+    _examples: [ LMG 9042 ]
 
   #--- M
   - codes: [ MAFF ]
@@ -321,6 +321,14 @@ catalogues:
     url_pattern: "https://mccc.org.cn/detailRecord3.asp?bcbh=%s"
 
   #--- N
+  - codes: [ NCPPB ]
+    country_code: UK
+    name: National Collection of Plant Pathogenic Bacteria
+    organization: Fera Science Ltd
+    url: "https://shop.fera.co.uk/ncppb"
+    url_pattern: "https://ncppb.fera.co.uk/furtherinfo.cfm?ncppb_no=%s"
+    _examples: [ NCPPB 2877 ]
+    _tested: 2025-12-23
   - codes: [ NCTC ]
     country_code: UK
     name: National Collection of Type Cultures
