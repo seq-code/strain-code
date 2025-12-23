@@ -89,6 +89,8 @@ catalogues:
       Biotechnology Culture Collection,
       Research and Development Center for Biotechnology
     organization: "LIPI: Indonesian Institute of Sciences"
+    _notes: >-
+      Not to be confused with the Bulgarian Type Culture Collection, now NBIMCC
   - codes: [ BUSCOB ]
     country_code: IT
     name: Bologna University Scardovi Collection of Bifidobacteria
@@ -135,7 +137,7 @@ catalogues:
     name: Culture Collection University of Gothenburg
     organization: University of Gothenburg
     country_code: SE
-    url_pattern: 'https://www.ccug.se/strain?id=%s'
+    url_pattern: "https://www.ccug.se/strain?id=%s"
   - codes: [ CECT ]
     country_code: ES
     name: Colección Española de Cultivos Tipo
@@ -144,7 +146,7 @@ catalogues:
     url:
       "https://www.uv.es/uvweb/coleccion-espanola-cultivos-tipo/es/\
       coleccion-espanola-cultivos-tipo-1285872233521.html"
-    url_pattern: 'https://www.cect.org/vstrn2.php?cect=%s'
+    url_pattern: "https://www.cect.org/vstrn2.php?cect=%s"
   - codes: [ CFCC ]
     country_code: CN
     name: China Forestry Culture Collection Center
@@ -172,6 +174,13 @@ catalogues:
     country_code: FR
     url_pattern:
       "https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP%%20%s"
+  - codes: [ CNCM ]
+    country_code: FR
+    name: Collection Nationale de Cultures de Microorganismes
+    name_en: National Collection of Cultures of Microorganisms
+    organization: Institut Pasteur
+    url: "https://www.pasteur.fr/en/cncm"
+    _examples: [ CNCM I-2120 ]
 
   #--- D
   - codes: [ DSM ]
@@ -321,6 +330,23 @@ catalogues:
     url_pattern: "https://mccc.org.cn/detailRecord3.asp?bcbh=%s"
 
   #--- N
+  - codes: [ NBIMCC ]
+    country_code: BG
+    name: National Bank for Industrial Microorganisms and Cell Cultures
+    organization: University of Chemical Technology and Metallurgy
+    url: "https://www.nbimcc.org/"
+    url_pattern: "https://www.nbimcc.org/www_2020/strain.php?lan=en&cn=%s"
+    _examples: [ NBIMCC 8848 ]
+    _tested: 2025-12-23
+  - codes: [ NCIM ]
+    country_code: IN
+    name: National Collection of Industrial Microorganisms
+    organization: Council of Scientific and Industrial Research
+    url: "https://www.ncl-india.org/files/ncim/Default.aspx"
+    url_pattern: "https://www.ncl.res.in/files/ncim/cataloguedetails.aspx\
+      ?ncimno=%s"
+    _examples: [ NCIM 5326 ]
+    _tested: 2025-12-23
   - codes: [ NCPPB ]
     country_code: UK
     name: National Collection of Plant Pathogenic Bacteria
