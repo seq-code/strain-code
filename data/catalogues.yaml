@@ -121,6 +121,14 @@ catalogues:
     organization: Masaryk University
     country_code: CZ
     url_pattern: "https://www.sci.muni.cz/ccm/bakterie/camb/%s"
+  - codes: [ CCMM ]
+    name: Collections Coordonnées Marocaines de Micro-organismes
+    name_en: Moroccan Coordinated Collections of Microorganisms
+    organization: >-
+      CNRST: Centre National pour la Recherche Scientifique et Technique
+    country_code: MA
+    url: "https://www.ccmm.ma/"
+    _examples: [ CCMM B1, CCMM B1359 ]
   - codes: [ CCMP, NCMA ]
     name: >-
       NCMA: National Center for Marine Algae and Microbiota,
