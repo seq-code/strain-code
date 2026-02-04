@@ -290,8 +290,8 @@ catalogues:
     name: Korean Agricultural Culture Collection
     organization: National Academy of Agricultural Science
     country_code: KR
-    url_pattern: "https://genebank.rda.go.kr/eng/mic/cat/\
-      MicrobeSearch.do?sSearchWith=no&sTxt1=%s"
+    url: "https://genebank.rda.go.kr/eng/EgovPageLink.do"
+    _examples: [ KACC 19675 ]
   - codes: [ KCTC ]
     country_code: KR
     name: Korean Collection for Type Cultures
