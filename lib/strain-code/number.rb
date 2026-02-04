@@ -18,7 +18,10 @@ class StrainCode::Number
   end
 
   def url
-    catalogue.url_pattern % accession if catalogue&.url_pattern
+    return unless catalogue&.url_pattern && accession
+
+    acc = catalogue&.number_tr ? accession.tr(*catalogue.number_tr) : accession
+    catalogue.url_pattern % acc
   end
 
   def catalogue

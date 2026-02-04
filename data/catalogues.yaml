@@ -5,6 +5,9 @@
 #   matches a catalogue code
 # - name_en: Name of the culture collection in English, if +name+ is spelled in
 #   a different language
+# - number_tr: A two-string array indicating that characters in the first list
+#   should be replaced by those in the second list prior to passing the number
+#   to the `url_pattern`
 # - organization: Name of the organization generating the catalogue. If a
 #   well-known acronym exists, this field should start with this acronym
 #   followed by colon (:) and the spelled-out name of the organization
@@ -116,6 +119,14 @@ catalogues:
     organization: Czech Academy of Sciences
     country_code: CZ
     url_pattern: "https://ccala.butbn.cas.cz/strain/%s"
+  - codes: [ CCAP ]
+    name: "Culture Collection of Algae & Protozoa"
+    organization: "SAMS: Scottish Association for Marine Science"
+    country_code: UK
+    url: "https://www.ccap.ac.uk/"
+    number_tr: ["/", "-"]
+    url_pattern: "https://www.ccap.ac.uk/catalogue/strain-%s"
+    _examples: [ CCAP 1460/5 ]
   - codes: [ CCM ]
     name: Czech Collection of Microorganisms
     organization: Masaryk University
@@ -389,7 +400,8 @@ catalogues:
     name: National Institute for Environmental Studies Collection
     organization: National Institute for Environmental Studies
     country_code: JP
-    url_pattern: "https://mcc.nies.go.jp/numberSearch.do?strainNumber=%s"
+    url: "https://mcc.nbrp.jp/index_en.html"
+    _examples: [ NIES 204 ]
   - codes: [ NRC, NRCC ]
     country_code: CA
     name: Division of Biological Sciences, National Research Council of Canada

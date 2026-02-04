@@ -26,7 +26,7 @@ class StrainCode::Catalogue
   end
 
   attr_accessor :codes, :country_code, :name, :name_en, :organization
-  attr_accessor :url, :url_pattern
+  attr_accessor :number_tr, :url, :url_pattern
 
   def initialize(hash)
     hash.each { |k, v| self.send("#{k}=", v) unless k =~ /^_/ }
