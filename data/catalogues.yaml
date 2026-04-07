@@ -312,6 +312,13 @@ catalogues:
     url_pattern: "https://kctc.kribb.re.kr/collection/view?sn=%s"
     _examples: [ KCTC 92132 ]
     _tested: 2025-03-18
+  - codes: [ KEMB ]
+    country_code: KR
+    name: Korea Environmental Microorganisms Bank
+    organization:
+      "KEMRC: Korea Environmental Microorganisms Resource Center"
+    url: "https://kemb.or.kr/eng_index.php"
+    _examples: [ KEMB 9005-744 ]
 
   #--- L
   - codes: [ LMG ]
