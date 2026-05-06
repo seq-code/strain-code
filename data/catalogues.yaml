@@ -293,7 +293,7 @@ catalogues:
   - codes: [ JMRC ]
     name: Jena Microbial Resource Collection
     organization: Friedrich Schiller University Jena
-    country_name: DE
+    country_code: DE
     url_pattern: "http://www.jmrc.uni-jena.de/data.php?fsu=%s"
 
   #--- K
