@@ -114,6 +114,11 @@ catalogues:
     organization: Oswaldo Cruz Institute, FIOCRUZ
     url: "https://cbas.fiocruz.br/index?catalogue"
     _examples: [ CBAS 716 ]
+  - codes: [ CBS ]
+    country_code: NL
+    name: CBS Filamentous fungi and Yeast Collection
+    organization: Westerdijk Fungal Biodiversity Institute
+    url: "https://wi.knaw.nl/Collection"
   - codes: [ CCALA ]
     name: Culture Collection of Autotrophic Organisms
     organization: Czech Academy of Sciences
@@ -364,6 +369,12 @@ catalogues:
     url_pattern: "https://www.nbimcc.org/www_2020/strain.php?lan=en&cn=%s"
     _examples: [ NBIMCC 8848 ]
     _tested: 2025-12-23
+  - codes: [ NCCB ]
+    country_code: NL
+    name: Netherlands Culture Collection of Bacteria
+    organization: Westerdijk Fungal Biodiversity Institute
+    url: "https://wi.knaw.nl/Collection"
+    _examples: [ NCCB 100438 ]
   - codes: [ NCIM ]
     country_code: IN
     name: National Collection of Industrial Microorganisms
